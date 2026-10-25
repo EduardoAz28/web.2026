@@ -1,0 +1,24 @@
+/* ==========================================
+   PRODUCTOS
+=========================================== */
+.w-fit {
+  width: fit-content;
+}
+
+.etiqueta-oscura {
+  background: rgba(19, 83, 138, .12);
+  color: var(--azul);
+}
+
+.card-img-wrapper {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img {
+  max-height: 140px;
+  width: auto;
+  object-fit: contain;
+}

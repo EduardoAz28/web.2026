@@ -1,0 +1,124 @@
+/* ==========================================
+   MENÚ DEL PROFESOR (.menu / .submenu)
+   adaptado a la barra del diseño nuevo
+=========================================== */
+
+/* reset solo para el menú (especificidad 0: no pisa nada) */
+:where(.menu, .menu *) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MENÚ PRINCIPAL */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 15px 10px;
+  color: #222222;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.menu > li > a:hover {
+  color: #0088cc;
+}
+
+/* SUBMENÚ */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 230px;
+  background-color: white;
+  list-style: none;
+  box-shadow: 0 5px 12px #bbbbbb;
+  border-top: 4px solid #0088cc;
+  z-index: 100;
+}
+
+.submenu a {
+  display: block;
+  padding: 16px;
+  color: #333333;
+  text-decoration: none;
+  font-size: 19px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.submenu a:hover {
+  background-color: #eaf7ff;
+  color: #0088cc;
+}
+
+/* MOSTRAR SUBMENÚ AL PASAR EL CURSOR */
+.menu li:hover > .submenu,
+.menu li:focus-within > .submenu {
+  display: block;
+}
+
+/* ADAPTACIÓN A PANTALLAS PEQUEÑAS */
+@media (max-width: 700px) {
+  .menu {
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .menu > li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .submenu {
+    position: static;
+    width: 100%;
+  }
+}
+
+/* ==========================================
+   AJUSTE DE TAMAÑOS Y COLORES AL DISEÑO NUEVO
+=========================================== */
+.nav-pro .menu {
+  gap: 18px;
+}
+
+.nav-pro .menu > li > a {
+  padding: 12px 6px;
+  color: var(--azul-oscuro);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-pro .menu > li > a:hover,
+.nav-pro .menu > li > a.activo {
+  color: var(--celeste);
+}
+
+.nav-pro .submenu {
+  border-top-color: var(--celeste);
+  border-radius: 0 0 8px 8px;
+}
+
+.nav-pro .submenu a {
+  padding: 12px 16px;
+  font-size: 15px;
+}
+
+.nav-pro .submenu a:hover {
+  background-color: var(--claro);
+  color: var(--celeste);
+}
