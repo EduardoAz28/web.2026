@@ -1,9 +1,12 @@
-/* ==========================================
-   NOSOTROS
-=========================================== */
 .about-img {
   width: 100%;
   height: auto;
   max-height: 400px;
   object-fit: cover;
+}
+html {
+  scroll-behavior: smooth;
+}
+section[id] {
+  scroll-margin-top: 90px;
 }

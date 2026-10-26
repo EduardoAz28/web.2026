@@ -1,23 +1,23 @@
-/* ==========================================
-   CONTACTO
-=========================================== */
 .form-control {
   border: 1px solid #ced4da;
   border-radius: 6px;
   background-color: #fcfcfc;
 }
-
 .form-control:focus {
   border-color: var(--celeste);
   box-shadow: 0 0 0 0.25rem rgba(23, 162, 200, 0.25);
 }
-
 .icono-contacto {
   font-size: 1.8rem;
   color: var(--celeste);
   line-height: 1.2;
 }
-
 .map-responsive {
   border: 1px solid #e0e0e0;
+}
+html {
+  scroll-behavior: smooth;
+}
+section[id] {
+  scroll-margin-top: 90px;
 }

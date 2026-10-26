@@ -122,3 +122,11 @@
   background-color: var(--claro);
   color: var(--celeste);
 }
+html {
+  scroll-behavior: smooth;
+}
+
+/* Compensación de la barra de menú fija para los anclajes con ID */
+section[id] {
+  scroll-margin-top: 90px;
+}

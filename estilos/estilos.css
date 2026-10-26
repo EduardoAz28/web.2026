@@ -169,3 +169,11 @@ body.pro { font-family: "Poppins", "Segoe UI", Arial, sans-serif; }
 @media (max-width: 576px) {
   .encabezado-pagina { padding: 50px 0 40px; }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+/* Compensación de la barra de menú fija para los anclajes con ID */
+section[id] {
+  scroll-margin-top: 90px;
+}

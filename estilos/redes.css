@@ -44,3 +44,11 @@
     font-size: 18px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+/* Compensación de la barra de menú fija para los anclajes con ID */
+section[id] {
+  scroll-margin-top: 90px;
+}
