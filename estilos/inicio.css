@@ -28,6 +28,7 @@
   font-size: 380px;
   color: rgba(255,255,255,.05);
   z-index: 1;
+  pointer-events: none;
 }
 .hero-pro .container {
   position: relative;
@@ -94,12 +95,12 @@
 .lista-card h5 { color: var(--azul-oscuro); font-weight: 700; margin-bottom: 14px; }
 .lista-card h5 i { color: var(--celeste); }
 .cta-banner { background: linear-gradient(120deg, var(--azul-oscuro), var(--azul)); padding: 64px 0; }
-@media (max-width: 576px) {
-  .hero-pro { padding: 60px 0 90px; }
-}
+
 html {
   scroll-behavior: smooth;
 }
 section[id] {
   scroll-margin-top: 90px;
 }
+
+/* Los ajustes para celular están en movil.css */
